@@ -19,7 +19,7 @@ public class Eo extends TelegramLongPollingBot {
 	 * Create a ReadClass object with the location of the config file
 	 */
 	public Eo() {
-		ReadClass config = new ReadClass("C:\\Users\\aleja\\Desktop\\Eo.config");
+		ReadClass config = new ReadClass("Eo.config");
 		this.config = config;
 		
 		}
@@ -32,8 +32,8 @@ public class Eo extends TelegramLongPollingBot {
 	 * @throws IOException
 	 */
 	public void sendMsg(String msg) throws IOException {
-		        long channel=-1001758498434L ; //prueba
-				//long channel=-1001574111334L ;
+		       
+			long channel=-1001574111334L ;
 		       	SendMessage message = new SendMessage(); // Create a SendMessage object
 		        message.setChatId(Long.toString(channel));
 		        message.setText(msg);
